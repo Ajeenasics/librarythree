@@ -1,0 +1,61 @@
+.loginbg {
+    /* background-color:aquamarine; */
+    background-image: url("https://thumbs.dreamstime.com/b/many-stacks-educational-books-to-teach-school-library-green-background-178987040.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+ 
+}
+
+.leftborder {
+    border: 1px solid;
+    height: 80vh;
+    margin-top: 10%;
+    margin-left: 40%;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    width: 64.5%;
+}
+
+.image {
+    height: 80vh;
+    width: 100%;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+
+.rightborder {
+    border: 1px solid;
+    margin-top: 10%;
+    margin-right: 28%;
+    height: 80vh;
+    width: 65%;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    background-color: white;
+
+
+
+}
+
+#right {
+    margin-left: 25%;
+    width: 50%;
+    margin-top: 10%;
+}
+
+.lab {
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+
+}
+
+.bt {
+    width: 100%;
+    margin-top: 5%;
+}
+
+.mb-5 {
+    color: green;
+    padding-top: 30%;
+}
