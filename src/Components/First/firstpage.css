@@ -1,0 +1,25 @@
+.firstbg{
+    background-image: url("../image/934072.webp");
+    
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#weltolib{
+    color:white;
+    padding-top: 5%;
+    margin-left: 15%;
+}
+#firstquotas{
+    color: white;
+    margin-left: 6%;
+    margin-top: 6%;
+}
+#firstlog{
+    margin-top: 2%;
+    margin-left: 10%;
+    width: 100px;
+}
+.firstpagenav{
+    margin-left: 70%;
+}

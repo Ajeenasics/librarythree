@@ -1,0 +1,13 @@
+.line::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px; 
+    background:green; 
+    transition: width .3s ease;
+    color: white;
+  }
+  
+  .line:hover::after {
+    width: 100%;
+  }
