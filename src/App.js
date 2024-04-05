@@ -8,6 +8,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import Fisrtpage from "./Components/First/Fisrtpage";
 import Studentprofile from "./Components/profile/Studentprofile";
+import Editprofile from "./Components/Editprofile/Editprofile";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path='/studentlogin' element={<Studentlogin/>}/>
         <Route path="/studentregister" element={<Studentregister/>}/>
         <Route path="/studentprofile" element={<Studentprofile/>}/>
+        <Route path="/editprofile" element={<Editprofile/>}/>
         
        
       </Routes>
