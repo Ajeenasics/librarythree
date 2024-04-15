@@ -21,8 +21,8 @@ function Studentfeedback() {
     })
   }
 
-  const updatefeedback=(e)=>{
-    e.preventDefault()
+  const updatefeedback=()=>{
+    if(feedbackdata.studentname && feedbackdata.studentnumber && feedbackdata.feedback){
     axios.post('http://localhost:5000/studentfeedback',feedbackdata)
     .then((res)=>{
       alert(res.data.msg)
@@ -34,7 +34,10 @@ function Studentfeedback() {
     })
     .catch((err)=>{
       console.log(err);
-    })
+    })}
+    else{
+      alert("fill the all deatils")
+    }
 
   }
 
