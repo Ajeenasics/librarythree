@@ -9,6 +9,7 @@ import Footer from "./Components/Footer/Footer";
 import Fisrtpage from "./Components/First/Fisrtpage";
 import Studentprofile from "./Components/profile/Studentprofile";
 import Editprofile from "./Components/Editprofile/Editprofile";
+import Studentfeedback from "./Components/Feedback/Studentfeedback";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/studentregister" element={<Studentregister/>}/>
         <Route path="/studentprofile" element={<Studentprofile/>}/>
         <Route path="/editprofile" element={<Editprofile/>}/>
+        <Route path="/studentfeedback" element={<Studentfeedback/>}/>
         
        
       </Routes>
