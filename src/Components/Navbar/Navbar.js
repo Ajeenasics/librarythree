@@ -30,7 +30,7 @@ function Navebar() {
             <Nav.Link className='line' href="#home">Book</Nav.Link>
             <Nav.Link className='line' href="#features">Wishlist</Nav.Link>
             <Nav.Link className='line' href="#pricing">FineAndHistory</Nav.Link>
-            <Nav.Link className='line' href="#pricing">Feedback</Nav.Link>
+            <Nav.Link className='line' href="/studentfeedback">Feedback</Nav.Link>
            <Link to={"/studentprofile"}><Button variant='dark'><IoMdContact /></Button></Link> 
         </Nav>
     </Container>

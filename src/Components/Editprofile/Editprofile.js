@@ -67,7 +67,7 @@ function Editprofile() {
         <input className='form-control mb-2' name='studentemail'  placeholder={value.studentemail} onChange={(e) => setstudentemail(e.target.value)} type='email'></input>
         <label className='editprofilelabel'>Password</label>
         <input className='form-control mb-2' name='studentpassword' placeholder={value.studentpassword} onChange={(e) => setStudentpassword(e.target.value)} type='password'></input>
-       ><Button className='editsavebt'onClick={save} variant='danger' >Update</Button>
+       <Button className='editsavebt'onClick={save} variant='danger' >Update</Button>
       </div>
       <Footer />
     </div>
