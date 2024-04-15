@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import logo from '../image/OIP-removebg-preview.png'
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function Fisrtpage() {
   return (
@@ -24,10 +25,38 @@ function Fisrtpage() {
             />
           </Navbar.Brand>
           <Nav className="firstpagenav">
-            <Nav.Link href='/studentlogin'>Login</Nav.Link>
-            <Nav.Link href='/studentregister'>Register</Nav.Link>
-            <Nav.Link>contact</Nav.Link>
 
+            <NavDropdown
+              id="nav-dropdown-dark-example"
+              title="Register"
+              menuVariant="dark"
+            >
+              <NavDropdown.Item href="/studentregister">Student Register</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1">Staf Register</NavDropdown.Item>
+
+            </NavDropdown>
+
+            <NavDropdown
+              id="nav-dropdown-dark-example"
+              title="Login"
+              menuVariant="dark"
+            >
+              <NavDropdown.Item href="/studentlogin">Student Login</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1">Staf Login</NavDropdown.Item>
+
+            </NavDropdown>
+            
+            <NavDropdown
+              id="nav-dropdown-dark-example"
+              title="Contact"
+              menuVariant="dark"
+            >
+              <NavDropdown.Item href="">Library Contact</NavDropdown.Item>
+
+            </NavDropdown>
+           
+
+            
 
           </Nav>
         </Container>

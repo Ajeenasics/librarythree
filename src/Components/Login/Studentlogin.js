@@ -62,6 +62,8 @@ function Studentlogin() {
             <label className='lab mb-2' >Password</label>
             <input className='form-control mb-3'name='studentpassword'value={logindata.password} onChange={loginchange} type='text'></input>
             <Button  className='bt' onClick={details}  variant="dark">Login</Button>
+
+            
             
             </div>
           </div>
