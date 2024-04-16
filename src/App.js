@@ -10,6 +10,8 @@ import Fisrtpage from "./Components/First/Fisrtpage";
 import Studentprofile from "./Components/profile/Studentprofile";
 import Editprofile from "./Components/Editprofile/Editprofile";
 import Studentfeedback from "./Components/Feedback/Studentfeedback";
+import Studentviewbook from "./Components/viewbook/Studentviewbook";
+import Studentcomplient from "./Components/complient/Studentcomplient";
 
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
         <Route path="/studentprofile" element={<Studentprofile/>}/>
         <Route path="/editprofile" element={<Editprofile/>}/>
         <Route path="/studentfeedback" element={<Studentfeedback/>}/>
+        <Route path="/studentviewbook" element={<Studentviewbook/>}/>
+        <Route path="/studentcomplient" element={<Studentcomplient/>}/>
         
        
       </Routes>

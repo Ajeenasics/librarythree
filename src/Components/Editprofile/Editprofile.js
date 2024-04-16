@@ -18,13 +18,8 @@ function Editprofile() {
   const[value,setValue]=useState({})
 
   const navigate =useNavigate()
- 
-
- 
- 
-
-
-   const id = localStorage.getItem('studentid')
+  
+  const id = localStorage.getItem('studentid')
   const finddata = () => {
     axios.get(`http://localhost:5000/findprofileedit/${id}`)
 

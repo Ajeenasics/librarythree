@@ -13,8 +13,6 @@ function Studentprofile() {
     const editnav = () => {
         navigate('/editprofile')
     }
-
-
     const id = localStorage.getItem('studentid')
     const viewprofile = () => {
         axios.get(`http://localhost:5000/profileview/${id}`)
@@ -44,6 +42,7 @@ function Studentprofile() {
                 <p className='profileview'>StudentEmail : {profile.studentemail}</p>
                 <p className='profileview'>StudentPassword : {profile.studentpassword}</p>
                 <Button onClick={editnav} className='editprofilebtn' variant='danger'>Edit</Button>
+             
             </div>
 
             <Footer />

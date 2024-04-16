@@ -3,8 +3,8 @@ import './homepage.css'
 import Button from 'react-bootstrap/Button';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
-import { Link } from 'react-router-dom';
 import axios from 'axios'
+import { Link } from 'react-router-dom';
 
 function Homepage() {
     const [welcomename, setWelcomename] = useState({})
@@ -32,7 +32,7 @@ function Homepage() {
             <div >
                 <h1 className='welcome'>Welcome To Student Library</h1>
                 <h1 className='welcomename'>{welcomename.studentname}</h1>
-                <Link to={"/viewbook"}>  <Button id='homebt' variant="danger">Viewbook</Button></Link>
+              <Link to={'/studentviewbook'}> <Button id='homebt' variant="danger">Viewbook</Button></Link>  
 
             </div>
 
