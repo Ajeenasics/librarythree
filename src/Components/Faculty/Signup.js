@@ -16,7 +16,7 @@ function Signup() {
       <Row>
         <Col xs={6}>
           <div className='leftborder'>
-            <img className='image' src="https://img.freepik.com/premium-photo/bookshelves-library-with-old-books-3d-render-3d-illustration_717906-963.jpg" alt="" />
+            <img className='image' src="https://nypost.com/wp-content/uploads/sites/2/2023/10/best-book-lover-gifts.jpg?quality=75&strip=all" alt="" />
           </div>
         </Col>
         <Col xs={6}>

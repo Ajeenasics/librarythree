@@ -8,6 +8,7 @@ import Search from "./Components/Faculty/Search";
 import Signin from "./Components/Faculty/Signin";
 import Checkout from "./Components/Faculty/Checkout";
 import Home from "./Components/Faculty/Home";
+import Cart from "./Components/Faculty/Cart";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="Signin" element={<Signin/>}/>
         <Route path="Checkout" element={<Checkout/>}/>
         <Route path="Home" element={<Home/>}/>
+        <Route path="Cart" element={<Cart/>}/>
       </Routes>
     </BrowserRouter>
   );

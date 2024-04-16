@@ -1,32 +1,42 @@
 import React from 'react'
-
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Button from 'react-bootstrap/Button';
+import "../Faculty/home.css"
+import { useNavigate } from 'react-router-dom';
 function Home() {
+    const Navigate=useNavigate()
+    let view=()=>{
+        Navigate("/Search")
+    }
+    let sign=()=>{
+        Navigate("/Signin")
+    }
   return (
     <div>
+          <Navbar bg="dark" data-bs-theme="dark">
+        <Container>
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#features" onClick={sign}>Signin</Nav.Link>
+            <Nav.Link href="#pricing">View Books</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+      <br />
+      <div id='a'>
+        <h1>Library</h1>
+        <h3>
+     "Nothing is pleasanter than exploring a library."
 
+Walter Savage Landor </h3>
+<h4>-Walter Savage Landor</h4>
+        <br></br>
+        <Button variant="outline-warning"  onClick={view}>View Available Books</Button>
+        
 
-<div id="carouselExampleFade" class="carousel slide carousel-fade">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="..." class="d-block w-100" alt="..."/>
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="..."/>
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="..."/>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-
+      </div>
     </div>
   )
 }

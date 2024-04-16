@@ -11,7 +11,7 @@ function Signin() {
   
   const Navigate=useNavigate()
   let signin=()=>{
-    Navigate('/Search')
+    Navigate('/Home')
   }
   let signup=()=>{
     Navigate('/Signup')
