@@ -30,10 +30,10 @@ function Navebar() {
                         />
                     </Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link className='line' id='navtags' href="#home">Book</Nav.Link>
                         <Nav.Link className='line' id='navtags' href="#features">Wishlist</Nav.Link>
                         <Nav.Link className='line' id='navtags' href="/studentfeedback">Feedback</Nav.Link>
                         <Nav.Link className='line' id='navtags' href='/studentcomplient' >Complient</Nav.Link>
+                        <Nav.Link className='line' id='navtags' href='/addbook' >Addbook</Nav.Link>
                         <Link to={"/studentprofile"}><Button variant='dark' id='navtags'><IoMdContact /></Button></Link>
                     </Nav>
                 </Container>

@@ -1,0 +1,26 @@
+#addbookbg{
+    background-image: url("../image/boeke-768x512.jpg");
+    height: 100vh;
+    background-size: 100%;
+}
+.addbooklabel{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#addbookborder{
+    margin-top: 2%;
+    margin-left: 42%;
+    width: 15%;
+   
+}
+.bookheading{
+    margin-top: 5%;
+    color: white;
+    margin-left: 40%;
+    font-size: xx-large;
+    
+}
+#addbookbt{
+    margin-top: 10px;
+    width: 48%;
+}
