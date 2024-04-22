@@ -20,6 +20,7 @@ const complientchange=(e)=>{
 }
 
 const submitcomplient=(e)=>{
+  if(complientdata.registercomplient && complientdata.corection){
   axios.post('http://localhost:5000/studentcomplient',complientdata)
   .then((res)=>{
     alert(res.data.msg);
@@ -31,7 +32,9 @@ const submitcomplient=(e)=>{
   })
   .catch((err)=>{
     console.log(err);
-  })
+  })}else{
+    alert("fill the details")
+  }
 
 }
   return (
