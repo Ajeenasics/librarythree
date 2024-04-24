@@ -13,6 +13,9 @@ import Studentfeedback from "./Components/Feedback/Studentfeedback";
 import Studentviewbook from "./Components/viewbook/Studentviewbook";
 import Studentcomplient from "./Components/complient/Studentcomplient";
 import Addbook from "./Components/addbook/Addbook";
+import Viewone from "./Components/viewonebook/Viewone";
+import Editbook from "./Components/editbook/Editbook";
+
 
 
 function App() {
@@ -31,6 +34,8 @@ function App() {
         <Route path="/studentviewbook" element={<Studentviewbook/>}/>
         <Route path="/studentcomplient" element={<Studentcomplient/>}/>
         <Route path="/addbook" element={<Addbook/>}/>
+        <Route path="/viewone/:id" element={<Viewone/>}/>
+        <Route path="/editbook/:id"element={<Editbook/>}/>
         
        
       </Routes>
