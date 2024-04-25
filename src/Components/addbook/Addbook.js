@@ -71,7 +71,7 @@ function Addbook() {
                     name='title'
                     value={addbookdata.title}
                     onChange={addbookchange} />
-                <label className='addbooklabel mb-2'>AUTHER</label>
+                <label className='addbooklabel mb-2'>AUTHOR</label>
                 <input type='text'
                     className='form-control mb-2'
                     name='auther'
