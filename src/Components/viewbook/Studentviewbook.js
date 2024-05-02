@@ -12,26 +12,46 @@ function Studentviewbook() {
     const [viewbook, setViewbook] = useState([])
     // const navigate=useNavigate()
 
+    const studentid = localStorage.getItem('studentid')
+    // console.log(studentid);
+
     const view = () => {
-        axios.get('http://localhost:5000/findbook')
+        axios.get('http://localhost:5000/findbook', viewbook)
             .then((res) => {
                 setViewbook(res.data.data)
-                console.log(res);
+                // console.log(res);
 
             })
             .catch((err) => {
                 setViewbook(err);
             })
     }
-    console.log(viewbook);
+    // console.log(viewbook);
+
 
     useEffect(() => {
         view()
     }, [])
 
+    const hireBook = (bookid) => {
+        if ((bookid)) {
+            axios.post(`http://localhost:5000/hirebookdata/${studentid}`, { bookid: bookid })
+                .then((res) => {
+                    
+                    alert("book hired", res);
+                   
+                })
+                .catch((err) => {
+                })
+
+        } else {
+            alert("already hired")
+        }
+    }
+
     // const viewabook=(bookid)=>{
 
-    //     navigate('/viewone')
+    //     
     // }
     return (
         <div className='viewbookbg'>
@@ -43,7 +63,7 @@ function Studentviewbook() {
                     {viewbook.map((item, index) => (
                         <div className='col-md-3 mb-3'>
                             <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src='' />
+                                <Card.Img variant="top" src={`http://localhost:5000/${item.image.filename}`} />
                                 <Card.Body>
                                     <Card.Title> book details</Card.Title>
                                 </Card.Body>
@@ -54,9 +74,11 @@ function Studentviewbook() {
                                 </ListGroup>
                                 <div className="d-flex justify-content-between p-3">
 
-                                   {/* <Button onClick={()=>viewabook({item._id})} id='viewBtn' variant='dark'>View Book</Button> */}
-                                 <Link to={`/viewone/${item._id}`}>  <Button id='borrowBtn'  variant='dark'>View  Book</Button></Link>
-                                 <Link to={`/editbook/${item._id}`}>  <Button id='borrowBtn'  variant='dark'> edit</Button></Link>
+                                    <Link to={`/viewone/${item._id}`}>  <Button id='borrowBtn' variant='dark'>View  Book</Button></Link>
+                                    <Button id='borrowBtn' variant='dark' onClick={() => hireBook(item._id)}>Hire Book</Button>
+                                    {/* <Link to={`/editbook/${item._id}`}>  <Button id='borrowBtn'  variant='dark'> Edit </Button></Link> */}
+
+
 
                                 </div>
                             </Card>

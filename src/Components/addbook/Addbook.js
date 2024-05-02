@@ -27,11 +27,7 @@ function Addbook() {
     };
 
     const add = () => {
-        if(addbookdata.title && addbookdata.auther && addbookdata.isbn 
-            
-        
-        
-        )
+        if(addbookdata.title && addbookdata.auther && addbookdata.isbn)
         {
         axios.post('http://localhost:5000/addbook', addbookdata, {
             headers: {
