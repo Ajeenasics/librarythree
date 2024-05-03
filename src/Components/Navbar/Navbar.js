@@ -7,6 +7,7 @@ import './navbar.css'
 import { Button } from 'react-bootstrap';
 import { IoMdContact } from "react-icons/io";
 import { Link } from 'react-router-dom';
+import { FaHome } from "react-icons/fa";
 function Navebar() {
 
    
@@ -30,11 +31,14 @@ function Navebar() {
                         />
                     </Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link className='line' id='navtags' href="#features">Wishlist</Nav.Link>
-                        <Nav.Link className='line' id='navtags' href="/studentfeedback">Feedback</Nav.Link>
-                        <Nav.Link className='line' id='navtags' href='/studentcomplient' >Complient</Nav.Link>
-                        <Nav.Link className='line' id='navtags' href='/addbook' >Addbook</Nav.Link>
-                        <Link to={"/studentprofile"}><Button variant='dark' id='navtags'><IoMdContact /></Button></Link>
+                        <Link to={'/homepage'}><Button  className='line' variant='dark'><FaHome /></Button></Link> 
+                        <Nav.Link className='line'  href="/mybookdata">Mybook</Nav.Link>
+                        <Nav.Link className='line'  href="/studentfeedback">Feedback</Nav.Link>
+                        <Nav.Link className='line'  href='/studentcomplient' >Complient</Nav.Link>
+                        <Nav.Link className='line'  href='/addbook' >Addbook</Nav.Link>
+                        <Link to={"/studentprofile"}><Button  className='line' variant='dark' id='navtags'><IoMdContact /></Button></Link>
+                        
+                        
                     </Nav>
                 </Container>
             </Navbar>

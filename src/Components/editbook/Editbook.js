@@ -47,6 +47,7 @@ function Editbook() {
     return (
         <div className='bookbg'>
             <Navbar/>
+            <h1 className='text-center text-light mb-3' >Edit Book Details</h1>
             <div className='bookborder'>
                 <label className='booklabel'>TITLE</label>
                 <input className='form-control mb-2 '

@@ -5,13 +5,9 @@
     height: 2px; 
     background:green; 
     transition: width .3s ease;
-    color: white;
    
   }
   
   .line:hover::after {
     width: 100%;
-  }
-  #navtags{
-    padding-right: 20px;
   }

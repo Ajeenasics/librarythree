@@ -27,7 +27,7 @@ function Studentlogin() {
           if (res.data.status === 200) {
 
             localStorage.setItem("studentid", res.data.data._id)
-            console.log(localStorage.getItem('studentid'));
+            // console.log(localStorage.getItem('studentid'));
 
             alert("Login Success");
             navigate('/homepage')
@@ -39,7 +39,7 @@ function Studentlogin() {
           console.log(error);
         });
     } else {
-      alert("you didn't enter datas");
+      alert(" enter datas");
     }
   };
 
