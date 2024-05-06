@@ -15,7 +15,6 @@ import Studentcomplient from "./Components/complient/Studentcomplient";
 import Addbook from "./Components/addbook/Addbook";
 import Viewone from "./Components/viewonebook/Viewone";
 import Editbook from "./Components/editbook/Editbook";
-import Hirebook from "./Components/hirebook/Hirebook";
 import Mybookdata from "./Components/mybook/Mybookdata";
 
 
@@ -38,7 +37,6 @@ function App() {
         <Route path="/addbook" element={<Addbook/>}/>
         <Route path="/viewone/:id" element={<Viewone/>}/>
         <Route path="/editbook/:id"element={<Editbook/>}/>
-        <Route path="/hirebook" element={<Hirebook/>}/>
        <Route path="/mybookdata"element={<Mybookdata/>}/>
       
         

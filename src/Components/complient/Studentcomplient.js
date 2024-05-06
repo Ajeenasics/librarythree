@@ -48,7 +48,7 @@ function Studentcomplient() {
           name='registercomplient'
           onChange={complientchange}
           value={complientdata.registercomplient} />
-        <label className='complientlabel mb-2'>How can you makkes things right</label>
+        <label className='complientlabel mb-2'>How can you makes things right</label>
         <textarea className='form-control mb-3'
           name='corection'
           onChange={complientchange}
