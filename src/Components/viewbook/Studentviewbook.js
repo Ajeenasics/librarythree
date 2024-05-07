@@ -31,23 +31,28 @@ function Studentviewbook() {
 
     useEffect(() => {
         view()
+        
     }, [])
 
     const hireBook = (bookid) => {
-        if ((bookid)) {
+        
+          
             axios.post(`http://localhost:5000/hirebookdata/${studentid}`, { bookid: bookid })
                 .then((res) => {
-                    
-                    alert("book hired", res);
+                  
+                    alert( res.data.msg);
                    
                 })
                 .catch((err) => {
+                    console.log(err);
                 })
-
-        } else {
-            alert("already hired")
-        }
+            
+        
     }
+
+
+    
+   
 
     // const viewabook=(bookid)=>{
 
