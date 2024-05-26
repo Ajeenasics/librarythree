@@ -3,9 +3,10 @@ import './viewone.css'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import axios from 'axios'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
+import { Button } from 'react-bootstrap'
 
 
 function Viewone() {
@@ -36,7 +37,7 @@ function Viewone() {
     return (
         <div className='viewonebg'>
             <Navbar />
-            <h1 className='text-center  text-light mb-3'>Book Details</h1>
+            <h1 className='text-center  mb-3'>Book Details</h1>
 
             <div className='onebookviewcard'>
                 <Card style={{ width: '18rem' }}>
@@ -50,6 +51,7 @@ function Viewone() {
                         <ListGroup.Item>AUTHOR : {viewone.auther}</ListGroup.Item>
                         <ListGroup.Item>ISBN : {viewone.isbn}</ListGroup.Item>
                     </ListGroup>
+                <Link to={'/studentviewbook'}><Button className='viewhomebt' variant='dark'>View Books</Button></Link> 
 
                 </Card>
 
@@ -60,3 +62,4 @@ function Viewone() {
 }
 
 export default Viewone
+

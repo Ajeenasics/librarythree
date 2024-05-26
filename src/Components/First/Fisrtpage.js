@@ -32,7 +32,7 @@ function Fisrtpage() {
               menuVariant="dark"
             >
               <NavDropdown.Item href="/studentregister">Student Register</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">Staf Register</NavDropdown.Item>
+              <NavDropdown.Item href="/stafregister">Staf Register</NavDropdown.Item>
 
             </NavDropdown>
 
@@ -42,7 +42,7 @@ function Fisrtpage() {
               menuVariant="dark"
             >
               <NavDropdown.Item href="/studentlogin">Student Login</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">Staf Login</NavDropdown.Item>
+              <NavDropdown.Item href="/staflogin">Staf Login</NavDropdown.Item>
 
             </NavDropdown>
             

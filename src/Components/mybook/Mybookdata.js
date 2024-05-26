@@ -5,6 +5,8 @@ import Footer from '../Footer/Footer'
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import axios from 'axios';
+import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 function Mybookdata() {
     const [mybook, setMybook] = useState([])
@@ -28,9 +30,9 @@ function Mybookdata() {
         <div className='mybookbg'>
             <Navbar />
             <div className='container'>
-                <h1 className='text-center text-light mb-3'>My Hire Book Details</h1>
+                <h1 className='text-center text-light mb-5'>My Hire Book Details</h1>
 
-                <div className='  row'>
+                <div className='row'>
                     {mybook.map((item, index) => (
                         <div className='col-md-3 mb-3'>
                             <Card style={{ width: '18rem' }}>
@@ -43,14 +45,10 @@ function Mybookdata() {
                                     <ListGroup.Item>BOOK NAME:{item.bookid.title} </ListGroup.Item>
                                     <ListGroup.Item>BOOK AUTHOR:{item.bookid.auther}</ListGroup.Item>
                                     <ListGroup.Item>ISBN:{item.bookid.isbn}</ListGroup.Item>
+                                  <Link to={'/homepage'}>  <Button id='mybookhomebt' variant='dark'>HOME</Button> </Link>
                                     
                                 </ListGroup>
-                                <div className="d-flex justify-content-between p-3">
-
-
-
-
-                                </div>
+                               
                             </Card>
                         </div>
                     ))}</div>

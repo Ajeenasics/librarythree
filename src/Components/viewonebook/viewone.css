@@ -1,9 +1,14 @@
 .viewonebg{
-    background-image: url(../image/boeke-768x512.jpg);
+    background-image: url('../image/3847557.webp');
     background-size: 100%;
     height: 100vh;
 }
 .onebookviewcard{
     margin-left: 40%;
     margin-top: 100px;
+}
+.viewhomebt{
+   
+   
+    width: 100%;
 }

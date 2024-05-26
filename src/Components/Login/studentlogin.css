@@ -1,61 +1,41 @@
-.loginbg {
-   
-    background-image: url("../image/boeke-768x512.jpg");
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: 100%;
- 
-}
-
-.leftborder {
-    /* border: 1px solid; */
-    height: 80vh;
-    margin-top: 10%;
-    margin-left: 40%;
-    border-top-left-radius: 5%;
-    border-bottom-left-radius: 5%;
-    width: 64.5%;
-}
-
 .image {
-    height: 80vh;
-    width: 100%;
-    border-top-left-radius: 5%;
-    border-bottom-left-radius: 5%;
+  height: 100vh;
+  width: 100%;
 }
 
-.rightborder {
-    /* border: 1px solid; */
-    margin-top: 10%;
-    margin-right: 28%;
-    height: 80vh;
-    width: 65%;
-    border-top-right-radius: 5%;
-    border-bottom-right-radius: 5%;
-    background-color:burlywood;
-
-
-
+#studentleftlog {
+  height: 100vh;
 }
 
-#right {
-    margin-left: 25%;
-    width: 50%;
-    margin-top: 10%;
+#studentrightlog {
+  background-color: black;
+  height: 100vh;
+  background-size: 100%;
 }
 
-.lab {
-    font-family: Arial, Helvetica, sans-serif;
-    /* color: green; */
+.studentrightform {
+  margin-top: 30%;
+  margin-left: 25%;
+
 
 }
 
-.bt {
-    width: 100%;
-    margin-top: 5%;
+
+
+.input-container input,
+.form button {
+  outline: none;
+  border: 1px solid #e5e7eb;
+  margin: 15px 0;
 }
 
-.mb-5 {
-    /* color: green; */
-    padding-top: 30%;
+.input-container input {
+  background-color: #fff;
+  padding: 1rem;
+  padding-right: 3rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  width: 300px;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }

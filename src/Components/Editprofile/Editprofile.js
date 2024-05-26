@@ -3,7 +3,6 @@ import './editprofile.css'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import axios from 'axios'
-import { Button } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom';
 
 
@@ -25,6 +24,7 @@ function Editprofile() {
 
       .then((res) => {
         setValue(res.data.data)
+        console.log(res);
 
 
 
@@ -48,7 +48,7 @@ function Editprofile() {
   }
   useEffect(() => {
     finddata()
-  })
+  },[])
 
   return (
     <div className='editprofilebg'>
@@ -56,7 +56,6 @@ function Editprofile() {
       <div className='editprofileborder'>
         <label className='editprofilelabel'>Name</label>
         <input className='form-control mb-2 '
-          name='studentname'
           placeholder={value.studentname}
           onChange={(e) => setStudentname(e.target.value)}
           type='text'></input>
@@ -78,7 +77,18 @@ function Editprofile() {
           placeholder={value.studentpassword}
           onChange={(e) => setStudentpassword(e.target.value)}
           type='password'></input>
-        <Button className='editsavebt' onClick={save} variant='danger' >Update</Button>
+
+        <button class="stafeditsave" onClick={save}>
+                    <span class="IconContainer">
+                        <svg viewBox="0 0 384 512" height="0.9em" class="icon">
+                            <path
+                                d="M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z"
+                            ></path>
+                        </svg>
+                    </span>
+                    <p class="text">Save</p>
+                </button>
+
       </div>
       <Footer />
     </div>

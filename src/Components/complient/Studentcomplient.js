@@ -4,8 +4,12 @@ import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import { Button } from 'react-bootstrap'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
 function Studentcomplient() {
+  const navigate = useNavigate()
+
+  const studentid=localStorage.getItem('studentid')
 
   const [complientdata, setComplientdata] = useState({
     registercomplient: '',
@@ -21,9 +25,10 @@ function Studentcomplient() {
 
   const submitcomplient = (e) => {
     if (complientdata.registercomplient && complientdata.corection) {
-      axios.post('http://localhost:5000/studentcomplient', complientdata)
+      axios.post(`http://localhost:5000/studentcomplient/${studentid}`, complientdata)
         .then((res) => {
           alert(res.data.msg);
+          navigate('/homepage')
 
           setComplientdata({
             registercomplient: '',
@@ -41,9 +46,13 @@ function Studentcomplient() {
   return (
     <div id='complientbg'>
       <Navbar />
-      <h3 className='complienttitle'>Student complient Form</h3>
+
+
+       <h3 className='complienttitle'>Student Complaint Form</h3>
+     
+     
       <div id='complientborder'>
-        <label className='complientlabel mb-2'>Register complient</label>
+        <label className='complientlabel mb-2'>Register Complaint</label>
         <textarea className='form-control mb-3'
           name='registercomplient'
           onChange={complientchange}
@@ -58,7 +67,8 @@ function Studentcomplient() {
           variant='danger'>Update</Button>
 
 
-      </div>
+      </div> 
+
 
 
 
@@ -70,3 +80,5 @@ function Studentcomplient() {
 }
 
 export default Studentcomplient
+
+
