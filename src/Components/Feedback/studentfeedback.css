@@ -1,31 +1,42 @@
 .feedbackbg{
     /* background-color: blue; */
-    background-image: url('../image/boeke-768x512.jpg');
+    background-image: url('../image/OIP\ \(2\).jpeg');
     background-repeat: no-repeat;
     background-size: 100%;
     height: 100vh;
 }
-.feedbackborder{
-    width: 15%;
-    margin-left: 43%;
-    margin-top: 30px;
+.feedbackborder{ 
+  background: #313131;
+  padding: 35px;
+  width: 25%;
+  margin-left: 38%;
+  margin-top: 5%;
+  border-radius: 10%;
 }
-#studentfeedbacktitle{
-    margin-left: 40%;
-    margin-top: 20px;
-    color: white;
-}
-#feedbacktext{
-    width: 15%;
-    margin-left: 43%;
-    height: 150px;
+#feedbackbtn{
+margin-top: 30px;
+margin-left: 35%;
+background: #313131;
+border: none;
 }
 .feedbacklabel{
-    font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-family: inherit;
+  margin-bottom: 10px;
+}
+.compouterborder{
+ padding: 20px;
+ border-radius: 10%;
+ background-color: black;
+
+}
+  #feedbacktext{
+    height: 100px;
     color: white;
-}
-.feedbackbtn{
-    width: 15%;
-    margin-left: 43%;
-    margin-top: 20px;
-}
+  }
+  #feedinput{
+    color: white;
+  }
+ 
+  
+  

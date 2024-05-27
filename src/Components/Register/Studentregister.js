@@ -53,7 +53,7 @@ function Studentregister() {
             <Row>
                 <Col xs={6}>
                     <div className='leftregister'>
-                        <img id='leftimage' src={regimage} alt=''></img>
+                        <img id='leftimage' src={regimage} alt='ss'></img>
                     </div>
                 </Col>
                 <Col xs={6}>
@@ -66,7 +66,7 @@ function Studentregister() {
                                 onChange={registerchange}
                                 value={registerdata.studentname}
                                 type='text' required></input>
-                            <label className='lablestyle mb-2'>Number</label>
+                            <label className='lablestyle mb-2'>Contact Number</label>
                             <input className='form-control mb-3'
                                 name='studentnumber'
                                 onChange={registerchange}

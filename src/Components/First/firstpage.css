@@ -1,17 +1,17 @@
 .firstbg{
-    background-image: url("../image/934072.webp");
+    background-image: url("../image/3847557.webp");
     
     height: 100vh;
     background-repeat: no-repeat;
     background-size: 100%;
 }
 #weltolib{
-    color:white;
+    color:black;
     padding-top: 5%;
     margin-left: 15%;
 }
 #firstquotas{
-    color: white;
+    color:black;
     margin-left: 6%;
     margin-top: 6%;
 }

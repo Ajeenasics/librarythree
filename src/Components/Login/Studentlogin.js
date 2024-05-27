@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 import './studentlogin.css'
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
-import logimage from '../image/1209755.webp'
+// import Button from 'react-bootstrap/Button';
+import logimage from '../image/dark-1015824_640.jpg'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 function Studentlogin() {
   const navigate = useNavigate()
   const [logindata, setLogindata] = useState({
@@ -45,42 +44,57 @@ function Studentlogin() {
 
 
   return (
-    <div className='loginbg'>
+    
 
-      <Row>
-        <Col xs={6}>
-          <div className='leftborder'>
-            <img className='image' src={logimage} alt="" />
+     
+        <div class="row">
+          <div class="col p-0">
+            <img className='image' src={logimage} alt='ss' />
           </div>
-        </Col>
-        <Col xs={6}>
-          <div className='rightborder'>
-            <div id='right'>
-              <h3 className='mb-5'>Login</h3>
-              <label className='lab mb-2'>Email</label>
-              <input className='form-control mb-3'
-                name='studentemail'
-                value={logindata.studentemail}
-                onChange={loginchange}
-                type='email'></input>
-              <label className='lab mb-2' >Password</label>
-              <input className='form-control mb-3'
-                name='studentpassword'
-                value={logindata.password}
-                onChange={loginchange}
-                type='text'></input>
-              <Button className='bt' onClick={details} variant="dark">Login</Button>
+          <div id='studentrightlog' class="col p-0">
+            <div className='studentrightform'>
+
+              < form class="form" >
+                <p class="form-title">Login in to your account</p>
+                <div class="input-container">
+                  <input type="email"
+                    placeholder="Enter email"
+                    name='studentemail'
+                    value={logindata.studentemail}
+                    onChange={loginchange} />
+                  <span>
+                  </span>
+                </div>
+                <div class="input-container">
+                  <input type="password"
+                    placeholder="Enter password"
+                    name='studentpassword'
+                    value={logindata.password}
+                    onChange={loginchange} />
+                </div>
+                <Button onClick={details} variant='danger'>Login</Button>
 
 
-
+              </form >
             </div>
-          </div>
-        </Col>
-      </Row>
 
-    </div>
+
+          </div>
+
+        </div>
+      
+
+   
 
   )
 }
 
 export default Studentlogin
+
+
+
+
+
+
+
+

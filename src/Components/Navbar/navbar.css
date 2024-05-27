@@ -11,3 +11,6 @@
   .line:hover::after {
     width: 100%;
   }
+  #studendnav{
+    padding-left: 30px;
+  }

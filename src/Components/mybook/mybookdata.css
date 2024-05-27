@@ -1,6 +1,9 @@
 .mybookbg{
-    background-image: url('../image//boeke-768x512.jpg');
+    background-image: url('../image/3847372.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
     height: 100vh;
+}
+#mybookhomebt{
+    width: 100%;
 }

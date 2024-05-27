@@ -16,7 +16,16 @@ import Addbook from "./Components/addbook/Addbook";
 import Viewone from "./Components/viewonebook/Viewone";
 import Editbook from "./Components/editbook/Editbook";
 import Mybookdata from "./Components/mybook/Mybookdata";
-
+import Stafnav from "./staf/stafnav/Stafnav";
+import Staffooter from "./staf/staffooter/Staffooter";
+import Stafhome from "./staf/stafhome/Stafhome";
+import Readcomp from "./staf/readcomplaint/Readcomp";
+import Readfeedback from "./staf/readfeedback/Readfeedback";
+import Stafregister from "./staf/stafreg/Stafregister";
+import Staflogin from "./staf/staflog/Staflogin";
+import Stafprofile from "./staf/stafprofile/Stafprofile";
+import Editstaf from "./staf/editstafprofile/Editstaf";
+import Stafviewbook from "./staf/stafviewbook/Stafviewbook";
 
 
 function App() {
@@ -38,7 +47,18 @@ function App() {
         <Route path="/viewone/:id" element={<Viewone/>}/>
         <Route path="/editbook/:id"element={<Editbook/>}/>
        <Route path="/mybookdata"element={<Mybookdata/>}/>
-      
+       
+      {/* staf */}
+      <Route path='/stafnav' element={<Stafnav/>}/>
+      <Route path="/staffooter" element={<Staffooter/>}/>
+      <Route path="/stafhome" element={<Stafhome/>}/>
+      <Route path="/readcomp" element={<Readcomp/>}/>
+      <Route path="/readfeedback"element={<Readfeedback/>}/>
+      <Route path="/stafregister" element={<Stafregister/>}/>
+      <Route path="staflogin" element={<Staflogin/>}/>
+      <Route path="/stafprofile" element={<Stafprofile/>}/>
+      <Route path="/editstaf" element={<Editstaf/>}/>
+      <Route path="/stafviewbook" element={<Stafviewbook/>}/>
         
        
       </Routes>

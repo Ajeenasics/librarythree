@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import './addbook.css'
-import Navbar from '../Navbar/Navbar'
-import Footer from '../Footer/Footer'
+import Stafnav from '../../staf/stafnav/Stafnav'
+import Staffooter from '../../staf/staffooter/Staffooter'
 import { Button } from 'react-bootstrap'
 import axios from 'axios'
-import { Link } from 'react-router-dom'
 
 function Addbook() {
     const [addbookdata, setabookdata] = useState({
@@ -57,7 +56,7 @@ function Addbook() {
 
     return (
         <div id='addbookbg'>
-            <Navbar />
+            <Stafnav />
             <h1 className='bookheading'>Add Book Details</h1>
 
             <div id='addbookborder'>
@@ -86,7 +85,6 @@ function Addbook() {
                     onChange={handleFileChange}
                 />
                 <Button id='addbookbt' onClick={add} variant='danger'>Add Book</Button>
-                <Link to={'/studentviewbook'}> <Button id='addbookbt'  variant='danger'>View</Button></Link>
 
 
             </div>
@@ -95,7 +93,7 @@ function Addbook() {
 
 
 
-            <Footer />
+            <Staffooter/>
         </div>
     )
 }

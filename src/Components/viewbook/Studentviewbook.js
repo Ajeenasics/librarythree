@@ -62,7 +62,7 @@ function Studentviewbook() {
         <div className='viewbookbg'>
             <Navbar />
             <div className='container'>
-                <h1 className='text-center text-light mb-3'> All Book Details</h1>
+                <h1 className='text-center  mb-3'> All Book Details</h1>
 
                 <div className='  row'>
                     {viewbook.map((item, index) => (
@@ -81,6 +81,7 @@ function Studentviewbook() {
 
                                     <Link to={`/viewone/${item._id}`}>  <Button id='borrowBtn' variant='dark'>View  Book</Button></Link>
                                     <Button id='borrowBtn' variant='dark' onClick={() => hireBook(item._id)}>Hire Book</Button>
+                                     
                                     {/* <Link to={`/editbook/${item._id}`}>  <Button id='borrowBtn'  variant='dark'> Edit </Button></Link> */}
 
 
